@@ -5,22 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Sign-up Form</title>
+  <script defer src = "script.js"></script>
 </head>
 <body>
-    <div class = 'img'>
-      <img src="space.jpg" alt="An image of a mountain">
-      <div class="blur"></div>
-      <div class="bg-color"></div>
-      <div class="logo">Sign-up to <br><span>SPACE</span></div>
-      <main>
-        <div class = description>
-        This is not a real online service, but it'd be cool if it existed. Anyways, sign-up <em>now</em>.
+      <div class="bg-color">
+        <div class="logo-wraper">
+          <div class="logo">Explore <span>SPACE</span></div>
+        </div>
+       
+      <div class="main-wraper">
+        <main>
+          <div class = description>
+          This is not a real online service, but it'd be cool if it existed. Anyways, sign-up <em>now</em>.
+        </div>
+        <form action="post">
+          <div class = "form-content"><div class = "left-section">
+            <label for="first" >*FIRST NAME</label>
+            <input type="text" id="first" minlength="2" required>
+            <label for="email">*EMAIL</label>
+            <input type="text" id = "email" required>
+            <label for="password">*PASSWORD</label>
+            <input type="password" id = "password" required minlength="8">
+          </div>
+          <div class="right-section">
+            <label for="last_name">*LAST NAME</label>
+            <input type="text" id="last_name" minlength="2" required>
+            <label for="number">*PHONE NUMBER</label>
+            <input type="tel" id="number" required>
+            <label for="PASSWORD">*CONFIRM PASSWORD</label>
+            <input type="password" id="confirm" required minlength="8"> 
+          </div></div>
+          
+          <button type="submit">SUBMIT</button>
+        </form>
+      </main>
       </div>
-    </main>
+      
+      </div>
       
 
-      </form>
-    </div>
    
    
 </body>
