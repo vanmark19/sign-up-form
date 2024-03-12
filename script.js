@@ -9,11 +9,10 @@ const pass = document.querySelector('#password');
 
 
 submit.addEventListener('click', e => {
-  e.preventDefault();
 });
 
 confirmPas.addEventListener('focusout', e => {
-  if (pass.value !== e.target.value || pass.value.length < 9)
+  if (pass.value !== e.target.value || pass.value.length < 8)
     confirmPas.classList.add('wrong');
   else  {
     confirmPas.classList.remove('wrong');
@@ -59,9 +58,10 @@ email.addEventListener('focusout', e => {
 });
 
 pass.addEventListener('focusout', e => {
-  if (e.target.value.legnth < 9)
-    email.classList.add('wrong');
-  else
-    email.classList.remove('wrong');
-    email.classList.add('right'); 
-});
+  if (pass.value.length < 8)
+    pass.classList.add('wrong');
+  else{
+    pass.classList.remove('wrong');
+    pass.classList.add('right'); 
+  }
+  });

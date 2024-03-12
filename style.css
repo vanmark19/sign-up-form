@@ -110,7 +110,7 @@ input:valid, input:invalid{
 }
 
 input:invalid{
-  color: blue;
+  color: white;
 }
 
 input:focus{
